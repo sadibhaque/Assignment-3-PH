@@ -38,22 +38,10 @@
             src="https://kit.fontawesome.com/bca6c2b1d7.js"
             crossorigin="anonymous"
         ></script>
-
-        <style>
-            .sora-font {
-                font-family: "Sora", serif;
-                font-weight: 400;
-                font-style: normal;
-            }
-            .poppins-font {
-                font-family: "Poppins", serif;
-                font-weight: 400;
-                font-style: normal;
-            }
-        </style>
     </head>
-    <body>
+    <body class="">
         <header class="bg-gradient-to-t from-[#EFEBE3] sora-font">
+            <!-- navbar -->
             <nav class="max-w-[1320px] mx-auto">
                 <div class="navbar lg:pt-6">
                     <div class="navbar-start">
@@ -100,20 +88,22 @@
                     </div>
                 </div>
             </nav>
-            <hr class="border-[#93eb83]">
+            <hr class="border-[#93eb83] pc-hide" />
 
             <!-- banner -->
             <div
                 class="max-w-[1320px] mx-auto mt-10 lg:mt-20 flex flex-col items-center"
             >
                 <h1
-                    class="text-3xl lg:text-5xl text-center font-semibold mb-8 w-[80%]"
+                    class="text-3xl lg:text-5xl text-center font-semibold mb-8 w-[80%] lg:w-[60%]"
                 >
                     Freshness
-                    <span class="text-[#179800]">You Can Count</span>
+                    <span class="text-[#179800]"
+                        >You Can <br class="mb-hide" />Count</span
+                    >
                     On, Prices You’ll Love!
                 </h1>
-                <p class="text-center text-xl w-[80%]">
+                <p class="text-center text-xl w-[80%] lg:w-[60%]">
                     Shop your daily essentials at unbeatable prices. From fresh
                     produce to pantry staples, we’ve got you covered every day!
                 </p>
@@ -127,8 +117,457 @@
             </div>
         </header>
 
-        <main></main>
+        <main>
+            <!-- services -->
+            <section class="max-w-[1320px] mx-auto my-10 lg:my-20">
+                <h1
+                    class="color-primary text-4xl font-semibold ml-5 lg:ml-0 mb-10"
+                >
+                    Services
+                </h1>
+                <div class="service-cards lg:flex justify-between">
+                    <div class="card bgg-primary lg:w-[32%] m-5 lg:m-0">
+                        <figure class="px-10 pt-10">
+                            <img
+                                src="./c2-assets/service.png"
+                                alt="shoes"
+                                class="rounded-xl"
+                            />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-2xl font-semibold">
+                                24/7 Services
+                            </h2>
+                            <p class="text-xl font-light">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bgg-primary lg:w-[32%] m-5 lg:m-0">
+                        <figure class="px-10 pt-10">
+                            <img
+                                src="./c2-assets/service.png"
+                                alt="shoes"
+                                class="rounded-xl"
+                            />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-2xl font-semibold">
+                                24/7 Services
+                            </h2>
+                            <p class="text-xl font-light">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bgg-primary lg:w-[32%] m-5 lg:m-0">
+                        <figure class="px-10 pt-10">
+                            <img
+                                src="./c2-assets/service.png"
+                                alt="shoes"
+                                class="rounded-xl"
+                            />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="text-2xl font-semibold">
+                                24/7 Services
+                            </h2>
+                            <p class="text-xl font-light">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <footer></footer>
+            <!-- popular products -->
+            <section class="my-10 lg:my-20 bgg-primary py-14">
+                <div class="max-w-[1320px] mx-auto lg:py-12">
+                    <h1
+                        class="color-primary text-4xl font-semibold ml-5 lg:ml-0 mb-10"
+                    >
+                        Popular Products
+                    </h1>
+
+                    <div class="flex flex-col lg:flex-row gap-5 mx-5 lg:mx-0">
+                        <!-- big one -->
+                        <div
+                            class="relative bg-gradient-to-br from-[#179800] rounded-xl p-7 flex flex-col gap-3"
+                        >
+                            <h3 class="text-3xl text-white">30% off</h3>
+                            <span class="text-black text-opacity-70">
+                                Discover a world of treats, toys, and essentials
+                                handpicked for you.
+                            </span>
+                            <div class="pb-32">
+                                <button
+                                    class="button-primary bg-white text-black px-6 py-1"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+
+                            <img
+                                class="absolute w-[60%] pr-3 bottom-0 right-0"
+                                src="./c2-assets/vegetable-offer.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="lg:w-full grid grid-cols-2 lg:grid-cols-3 gap-5"
+                        >
+                            <!-- small one -->
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-3 bg-white py-3 pl-3 rounded-md"
+                            >
+                                <div class="bgg-primary rounded-md">
+                                    <img src="./c2-assets/onion.png" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-xs lg:text-base">
+                                            <span class="mr-1 text-[#FFC107]"
+                                                ><i
+                                                    class="fa-solid fa-star"
+                                                ></i></span
+                                            >4.5
+                                        </p>
+                                    </div>
+                                    <h4 class="text-sm lg:text-xl font-medium">
+                                        Onion 1 KG
+                                    </h4>
+                                    <p class="text-xs lg:text-base font-medium">
+                                        $39.99
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- offers -->
+            <section class="max-w-[1320px] mx-auto my-10 lg:my-20 pb-72">
+                <h1
+                    class="color-primary text-4xl font-semibold ml-5 lg:ml-0 mb-10"
+                >
+                    Arrival & Offers
+                </h1>
+
+                <div
+                    class="poppins-font flex flex-col lg:flex-row px-5 lg:px-0 gap-5 relative"
+                >
+                    <div
+                        class="lg:w-[55%] flex items-center justify-between bg-[#115414] rounded-xl py-5 pl-5"
+                    >
+                        <div class="flex flex-col items-lrft gap-6">
+                            <img src="./c2-assets/dawat-logo.png" alt="" />
+                            <button
+                                class="button-primary py-3 px-4 bg-[#63B76D] text-xs lg:text-2xl text-white"
+                            >
+                                Cook Exotic Dishes
+                            </button>
+                            <h3 class="text-xl lg:text-4xl text-white">
+                                UP to 20% OFF
+                            </h3>
+                        </div>
+
+                        <div>
+                            <img
+                                class=""
+                                src="./c2-assets/dawat-mock-up.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="lg:w-[45%] flex items-center justify-between bg-[#102861] rounded-xl p-5"
+                    >
+                        <div class="flex flex-col items-left gap-6">
+                            <img
+                                class="w-[40%]"
+                                src="./c2-assets/india-gate-logo.png"
+                                alt=""
+                            />
+                            <button
+                                class="button-primary py-3 px-4 bg-[#2A4D97] text-xs lg:text-2xl text-white"
+                            >
+                                Cook Exotic Dishes
+                            </button>
+                            <h3 class="text-xl lg:text-4xl text-white">
+                                UP to 20% OFF
+                            </h3>
+                        </div>
+
+                        <img
+                            class="w-[35%]"
+                            src="./c2-assets/india-gate-mock-up.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- news -->
+            <section class="max-w-[1320px] mx-auto relative flex justify-center items-center">
+                <div
+                    class="lg:w-full flex bg-[#EFEBE3] rounded-2xl flex-col lg:flex-row lg:justify-around items-center absolute m-5"
+                >
+                    <img
+                        src="./c2-assets/vegetable-busket.png"
+                        class="lg:w-[40%] w-[60%] bg-[#EFEBE3] lg:py-10 lg:pl-10"
+                    />
+                    <div class="flex flex-col items-center lg:items-start gap-4 lg:gap-10 py-8">
+                        <h1 class="text-xl lg:text-5xl font-bold">Get Grocery News!</h1>
+                        <p class="text-base lg:text-xl text-center">
+                            Exclusive training tips, ticks, product deals and
+                            more.
+                        </p>
+                        <input
+                            type="text"
+                            placeholder="Enter Email"
+                            class="input w-[80%]"
+                        />
+                        <div>
+                            <button
+                                class="btn px-10 lg:text-xl bg-[#179800] text-white"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-[#179800] pt-72 py-10">
+            <div class="max-w-[1320px] mx-auto footer text-white lg:flex justify-between p-5 lg:p-0">
+                <nav class="lg:w-[40%]">
+                    <img src="./c2-assets/logo-footer.png" alt="">
+                    <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </nav>
+                <nav>
+                    <a class="text-xl">Product</a>
+                    <a class="text-xl">Service</a>
+                    <a class="text-xl">Contact Us</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Follow Us</h6>
+                    <div class="grid grid-flow-col gap-4">
+                        <a>
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </footer>
     </body>
 </html>

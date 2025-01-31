@@ -1,4 +1,20 @@
+/* fonts */
+
+.sora-font {
+    font-family: "Sora", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-font {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 /* shared */
+
 
 .button-primary{
     padding: 5px 10px;
@@ -7,6 +23,11 @@
 
 .color-primary{
     color: #179800;
+}
+
+
+.bgg-primary{
+    background-color: #EFEBE3;
 }
 
 
